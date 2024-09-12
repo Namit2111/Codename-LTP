@@ -6,13 +6,16 @@ const UserLink = () => {
   const handleformSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/link", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ link }),
-      });
+      const response = await fetch(
+        "http://localhost:5000/api/linkedin/get-data",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ link }),
+        }
+      );
       const data = await response.json();
       console.log(data);
     } catch (err) {
@@ -21,7 +24,7 @@ const UserLink = () => {
     console.log(link);
   };
   return (
-    <div className="bg-[#8EACCD] p-12 w-3/4 rounded-lg">
+    <div className="bg-[#8EACCD] p-12 w-3/4 rounded-lg mt-8">
       <form
         className="flex justify-center items-center gap-4 "
         onSubmit={handleformSubmit}
