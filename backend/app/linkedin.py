@@ -12,7 +12,6 @@ api = Linkedin(l_username, l_pass)
 @linkedin.route('/get-data', methods=['POST'])
 def get_linkedin():
     l_url = request.json['url']
-    print(l_url)
-    data = ap.get_profile(get_linkedin_handle(l_url))
+    data = api.get_profile(get_linkedin_handle(l_url))
     
     return data
