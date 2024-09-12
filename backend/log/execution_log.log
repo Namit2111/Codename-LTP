@@ -45,3 +45,30 @@
 2024-09-12 18:27:37 - 127.0.0.1 - - [12/Sep/2024 18:27:37] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
 2024-09-12 18:29:21 -  * Detected change in 'C:\\Users\\deepa\\Desktop\\Codename-LTP\\backend\\app\\__init__.py', reloading
 2024-09-12 18:29:21 -  * Restarting with stat
+2024-09-12 18:29:39 -  * Debugger is active!
+2024-09-12 18:29:39 -  * Debugger PIN: 145-562-682
+2024-09-12 18:29:39 - 127.0.0.1 - - [12/Sep/2024 18:29:39] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:29:39 - 127.0.0.1 - - [12/Sep/2024 18:29:39] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:29:40 - 127.0.0.1 - - [12/Sep/2024 18:29:40] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:29:40 - 127.0.0.1 - - [12/Sep/2024 18:29:40] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:29:46 - 127.0.0.1 - - [12/Sep/2024 18:29:46] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:29:46 - 127.0.0.1 - - [12/Sep/2024 18:29:46] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:30:44 - 127.0.0.1 - - [12/Sep/2024 18:30:44] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:30:44 - 127.0.0.1 - - [12/Sep/2024 18:30:44] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:34:32 - 127.0.0.1 - - [12/Sep/2024 18:34:32] "[31m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 415 -
+2024-09-12 18:34:56 - 127.0.0.1 - - [12/Sep/2024 18:34:56] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:34:56 - 127.0.0.1 - - [12/Sep/2024 18:34:56] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:35:59 - 127.0.0.1 - - [12/Sep/2024 18:35:59] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:35:59 - 127.0.0.1 - - [12/Sep/2024 18:35:59] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:38:42 - 127.0.0.1 - - [12/Sep/2024 18:38:42] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:38:42 - 127.0.0.1 - - [12/Sep/2024 18:38:42] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:38:53 - 127.0.0.1 - - [12/Sep/2024 18:38:53] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:38:53 - 127.0.0.1 - - [12/Sep/2024 18:38:53] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:40:07 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.71:5000
+2024-09-12 18:40:07 - [33mPress CTRL+C to quit[0m
+2024-09-12 18:40:07 -  * Restarting with stat
+2024-09-12 18:40:11 -  * Debugger is active!
+2024-09-12 18:40:11 -  * Debugger PIN: 145-562-682
