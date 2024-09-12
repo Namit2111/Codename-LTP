@@ -45,3 +45,36 @@
 2024-09-12 18:27:37 - 127.0.0.1 - - [12/Sep/2024 18:27:37] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
 2024-09-12 18:29:21 -  * Detected change in 'C:\\Users\\deepa\\Desktop\\Codename-LTP\\backend\\app\\__init__.py', reloading
 2024-09-12 18:29:21 -  * Restarting with stat
+2024-09-12 18:34:36 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.33.26:5000
+2024-09-12 18:34:36 - [33mPress CTRL+C to quit[0m
+2024-09-12 18:34:36 -  * Restarting with stat
+2024-09-12 18:34:40 -  * Debugger is active!
+2024-09-12 18:34:40 -  * Debugger PIN: 109-873-333
+2024-09-12 18:36:03 - 127.0.0.1 - - [12/Sep/2024 18:36:03] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:36:03 - 127.0.0.1 - - [12/Sep/2024 18:36:03] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:37:19 - 127.0.0.1 - - [12/Sep/2024 18:37:19] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:37:19 - 127.0.0.1 - - [12/Sep/2024 18:37:19] "[35m[1mPOST /api/linkedin/get-data HTTP/1.1[0m" 500 -
+2024-09-12 18:37:33 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\ltp\\backend\\app\\linkedin.py', reloading
+2024-09-12 18:37:33 -  * Restarting with stat
+2024-09-12 18:37:39 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.33.26:5000
+2024-09-12 18:37:39 - [33mPress CTRL+C to quit[0m
+2024-09-12 18:37:39 -  * Restarting with stat
+2024-09-12 18:37:43 -  * Debugger is active!
+2024-09-12 18:37:43 -  * Debugger PIN: 109-873-333
+2024-09-12 18:37:47 - 127.0.0.1 - - [12/Sep/2024 18:37:47] "OPTIONS /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:37:48 - Function: get_linkedin_handle
+Execution Time: 0.000000 seconds
+Arguments: ('https://www.linkedin.com/in/namit2111/',) {}
+Output: namit2111
+-------------------------------------
+2024-09-12 18:37:54 - 127.0.0.1 - - [12/Sep/2024 18:37:54] "POST /api/linkedin/get-data HTTP/1.1" 200 -
+2024-09-12 18:38:12 -  * Detected change in 'C:\\Users\\NAMIT\\Desktop\\ltp\\backend\\app\\linkedin.py', reloading
+2024-09-12 18:38:12 -  * Restarting with stat
+2024-09-12 18:38:16 -  * Debugger is active!
+2024-09-12 18:38:16 -  * Debugger PIN: 109-873-333
