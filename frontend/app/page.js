@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import UserLink from "./../components/UserLink";
+import { useState } from "react";
+import { usePortfolio } from "../portfolioContext"
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-dvh">
