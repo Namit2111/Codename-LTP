@@ -1,10 +1,17 @@
 "use client";
 import React, { useState } from "react";
-
+import { usePortfolio } from "../portfolioContext.js";
+import PortfolioComponent from "./PortfolioComponent";
+import { useRouter } from "next/navigation";
 const UserLink = () => {
+  const { portfolioData, setPortfolioData } = usePortfolio();
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
   const [link, setLink] = useState("");
   const handleformSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const response = await fetch(
         "http://localhost:5000/api/linkedin/get-data",
@@ -17,16 +24,22 @@ const UserLink = () => {
         }
       );
       const data = await response.json();
+      setLoading(false);
+      setPortfolioData(data);
       console.log(data);
+      if (portfolioData) {
+        router.push("/portfolio");
+      }
     } catch (err) {
       console.log(err);
     }
     console.log(link);
   };
+
   return (
-    <div className="bg-[#8EACCD] p-12 w-3/4 rounded-lg mt-8">
+    <div className="bg-[#8EACCD] p-12 w-3/4 rounded-lg mt-8 flex flex-col justify-center  shadow shadow-xl">
       <form
-        className="flex justify-center items-center gap-4 "
+        className="p-2 flex justify-center items-center gap-4"
         onSubmit={handleformSubmit}
       >
         <input
@@ -36,13 +49,14 @@ const UserLink = () => {
           onChange={(e) => setLink(e.target.value)}
           placeholder="Enter your link here"
         />
-        <button className="bg-[#405dbb] text-white rounded-md h-12 w-1/4">
-          Generate
+        <button className="bg-[#405dbb] hover:bg-[#2e4387] text-white rounded-md h-12 w-1/4">
+          {!loading ? "Generate" : "Generating..."}
         </button>
       </form>
       <p className="text-center p-4 text-[#FEF9D9]">
         Transform your LinkedIn into a live, stunning portfolio—automatically
       </p>
+      {/* <PortfolioComponent/> */}
     </div>
   );
 };

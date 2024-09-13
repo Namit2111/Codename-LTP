@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#D2E0FB]  flex flex-col lg:flex-row justify-around items-center mt-4 p-8 space-y-8 lg:space-y-0">
+    <div className="w-full bg-[#D2E0FB]  flex flex-col lg:flex-row justify-around items-center p-8 space-y-8 lg:space-y-0">
       <div className="w-full lg:w-1/5 flex items-center flex-col">
       <h1 className="julius text-2xl font-bold text-center">Linkfolio</h1>
       </div>
