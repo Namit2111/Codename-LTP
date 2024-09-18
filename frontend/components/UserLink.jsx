@@ -37,19 +37,19 @@ const UserLink = () => {
   };
 
   return (
-    <div className="bg-[#8EACCD] p-12 w-3/4 rounded-lg mt-8 flex flex-col justify-center  shadow shadow-xl">
+    <div className="bg-[#8EACCD] p-12 w-11/12 lg:w-3/4 rounded-lg mt-8 flex flex-col justify-center  shadow shadow-xl">
       <form
-        className="p-2 flex justify-center items-center gap-4"
+        className="p-2 flex justify-center lg:flex-row flex-col items-center gap-4"
         onSubmit={handleformSubmit}
       >
         <input
           type="text"
-          className="w-1/2 h-12 rounded-md p-3 ml-2 outline-none"
+          className="w-full lg:w-1/2 h-12 rounded-md p-3 ml-2 outline-none"
           value={link}
           onChange={(e) => setLink(e.target.value)}
           placeholder="Enter your link here"
         />
-        <button className="bg-[#405dbb] hover:bg-[#2e4387] text-white rounded-md h-12 w-1/4">
+        <button className="bg-[#405dbb] hover:bg-[#2e4387] text-white rounded-md h-12 w-1/2 lg:w-1/4">
           {!loading ? "Generate" : "Generating..."}
         </button>
       </form>

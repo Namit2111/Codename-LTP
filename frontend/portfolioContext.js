@@ -1,22 +1,45 @@
 // context/PortfolioContext.js
-'use client';
-import { createContext, useState, useContext } from "react";
+"use client";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const PortfolioContext = createContext();
 
 export const PortfolioProvider = ({ children }) => {
-  const [portfolioData, setPortfolioData] = useState({
-    certifications: [],
-    education: [],
-    experience: [],
-    projects: [],
-    honors: [],
-    languages: [],
-    skills: [],
-    summary: "",
+  const [portfolioData, setPortfolioData] = useState(() => {
+    if (typeof window !== "undefined") {
+      const savedData = localStorage.getItem("portfolioData");
+      return savedData
+        ? JSON.parse(savedData)
+        : {
+            certifications: [],
+            education: [],
+            experience: [],
+            projects: [],
+            honors: [],
+            languages: [],
+            skills: [],
+            summary: "",
+          };
+    } else {
+      return {
+        certifications: [],
+        education: [],
+        experience: [],
+        projects: [],
+        honors: [],
+        languages: [],
+        skills: [],
+        summary: "",
+      };
+    }
   });
 
-  console.log("Received data:", portfolioData); // Print the data received
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("portfolioData", JSON.stringify(portfolioData));
+    }
+    console.log(portfolioData);
+  }, [portfolioData]);
 
   return (
     <PortfolioContext.Provider value={{ portfolioData, setPortfolioData }}>

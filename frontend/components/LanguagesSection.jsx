@@ -3,7 +3,9 @@ import React from "react";
 const LanguagesSection = ({ portfolioData }) => {
   return (
     <div className="mb-8">
-      <h2 className="text-2xl font-semibold text-gray-700 mb-4">Languages</h2>
+      <h2 className="quicksand text-2xl font-semibold text-gray-700 mb-4 text-center">
+        Languages
+      </h2>
       <ul className="space-y-4">
         {portfolioData.languages.map((lang, index) => (
           <li key={index} className="bg-gray-50 p-4 rounded-lg shadow-md">

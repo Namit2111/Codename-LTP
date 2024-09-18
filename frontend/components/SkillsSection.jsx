@@ -3,7 +3,7 @@ import React from "react";
 
 const SkillsSection = ({ skills }) => {
   return (
-    <div className="mb-8">
+    <div className="mt-8 mb-8">
       <h2 className="text-2xl font-semibold text-gray-700 mb-4">Skills</h2>
       <div className="flex flex-wrap gap-3">
         {skills.map((skill, index) => (
