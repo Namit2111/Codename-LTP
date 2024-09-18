@@ -1,6 +1,6 @@
 import React from "react";
 
-const Experience = ({ experienceData }) => {
+const Experience = ({ experienceData = [] }) => {
   return (
     <div className="mb-8 min-h-dvh w-full">
       <h2 className="quicksand text-2xl font-semibold text-gray-700 mb-4 text-center">
@@ -24,12 +24,14 @@ const Experience = ({ experienceData }) => {
                 - {exp.timePeriod.endDate.month}/{exp.timePeriod.endDate.year}
               </p>
             </div>
+            {exp?.description && (
+              <p className="text-gray-600 mt-2">{exp.description}</p>
+            )}
           </div>
-          {/* {exp.description && (
-            <p className="text-gray-600 mt-2">{exp.description}</p>
-          )} */}
-        </div>
-      ))}
+        ))
+      ) : (
+        <p className="text-gray-600">No experience data available.</p>
+      )}
     </div>
   );
 };
